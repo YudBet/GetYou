@@ -70,7 +70,10 @@ body {
 .inner > nav > ul > button,
 .inner > button {
   border-radius: 5px;
-  margin-bottom: 15px;
+}
+.inner > nav > ul > button > span {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 
