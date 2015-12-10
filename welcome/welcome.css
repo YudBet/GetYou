@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-image: url("pic/cover.jpg");
+  background-image: url("../img/cover.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #666;
