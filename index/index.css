@@ -386,5 +386,8 @@ img#user-icon {
 }
 
 
-
+.thumbnail {
+	width: 105px;
+	height: 105px;
+}
 

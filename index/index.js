@@ -63,7 +63,7 @@ var showCalendar = function() {
 
 $("select.image-picker").imagepicker({
   hide_select: true,
-  show_label : true,
+  show_label : false,
   selected: function() {
     $(".thumbnail").css("background-color", "white");
     $("div.selected").css("background-color", "lightblue");
