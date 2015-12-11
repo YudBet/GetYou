@@ -384,3 +384,10 @@ img#user-icon {
     font-size: 12px;
     font-weight: 400;
 }
+
+
+.thumbnail {
+	width: 105px;
+	height: 105px;
+}
+
