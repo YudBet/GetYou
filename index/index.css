@@ -389,5 +389,19 @@ img#user-icon {
 .thumbnail {
 	width: 105px;
 	height: 105px;
+	padding: 1;
 }
 
+ul.thumbnails {
+	list-style-type: none;
+    margin: 50px;
+    overflow: hidden;
+}
+
+ul.thumbnails > li {
+	float: left;
+}
+
+.need-input {
+	width: 100%;
+}
