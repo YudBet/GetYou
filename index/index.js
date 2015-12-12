@@ -136,11 +136,25 @@ $(document).ready(function() {
 	    }
 	};
  	
-  	var map = new google.maps.Map(document.getElementById("map-page"), myOptions);
+  var map = new google.maps.Map(document.getElementById("map-page"), myOptions);
 
-  	var calendarControlDiv = document.createElement('div');
+  var calendarControlDiv = document.createElement('div');
 	var calendarControl = new CalendarControl(calendarControlDiv, map);
 
 	calendarControlDiv.index = 1;
 	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(calendarControlDiv);
+
+  $(".datepicker").datetimepicker({
+    format: 'yyyy年mm月dd日',
+    pickerPosition: "top-right",
+    weekStart: 1,
+    startDate: '+0d',
+    autoclose: 1,
+    todayHighlight: 1,
+    startView: 2,
+    minView: 2,
+    forceParse: 0,
+    fontAwesome: 1
+  });
 });
+

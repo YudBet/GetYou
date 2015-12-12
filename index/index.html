@@ -16,6 +16,10 @@
     <!-- Image Picker core CSS -->
     <link href="../image-picker-master/image-picker/image-picker.css">
 
+    <!-- Date/Time Picker core CSS -->
+    <link href="../bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css">
+
+
     <!-- Custom Fonts -->
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -196,7 +200,11 @@
                   <div class="wrap">
                     <div>
                       <label for="need-topic">主題</label>
-                      <input id="need-topic" type="text" class="cool"/>
+                      <input id="need-topic" type="text" />
+                    </div>
+                    <div>
+                      <label for="need-topic">日期</label>
+                      <input class="datepicker" id="need-topic" type="text" />
                     </div>
                   </div>
                 </div>
@@ -259,6 +267,9 @@
 
     <!-- Image Picker core JavaScript -->
     <script src="../image-picker-master/image-picker/image-picker.min.js"></script>
+
+    <!-- Date/Time Picker core JavaScript -->
+    <script src="../bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!--<script src="./js/ie10-viewport-bug-workaround.js"></script>-->
