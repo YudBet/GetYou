@@ -386,6 +386,15 @@ img#user-icon {
 }
 
 
+
+.jumbotron {
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: white;
+	font-family: "微軟正黑體";
+}
+
+
 .thumbnail {
 	width: 105px;
 	height: 105px;
