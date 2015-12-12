@@ -63,10 +63,10 @@ var showCalendar = function() {
 
 $("select.image-picker").imagepicker({
   hide_select: true,
-  show_label : false,
+  show_label : true,
   selected: function() {
     $(".thumbnail").css("background-color", "white");
-    $("div.selected").css("background-color", "lightblue");
+    $("div.selected").css("background-color", "#FF5511");
   }
 });
 

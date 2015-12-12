@@ -390,6 +390,8 @@ img#user-icon {
 	width: 105px;
 	height: 105px;
 	padding: 1;
+	font-family: "微軟正黑體";
+	text-align: center;
 }
 
 ul.thumbnails {
