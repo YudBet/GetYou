@@ -172,57 +172,6 @@
           </div>
 
           <div id="post-page">
-<!--
-            <div class="row post-header">
-
-              <div class="col-sm-5 col-md-5 col-lg-5 new-img">
-                <img src="./img/new.png">
-                <p>請選擇一張照片</p>
-              </div>
-
-              <div class="col-sm-7 col-md-7 col-lg-7 new-desc">
-
-                <div class="input-group-lg">
-                  <input type="text" class="form-control" placeholder="主題" aria-describedby="basic-addon1">
-                </div>
-                <br>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="日期">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-calendar"></i></button>
-                  </span>
-                </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="時間">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-clock-o"></i></button>
-                  </span>
-                </div>
-                <br>
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="地點">
-                </div>
-
-                <div class="input-group">
-                  <input type="number" class="form-control" placeholder="人數">
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="post-tasks">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="服務項目1">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">新增</button>
-                </span>
-              </div>
-              <div>
-                <button class="btn btn-lg btn-success confirm-btn" type="button">確認</button>
-              </div>
-            </div>
-          -->
 
             <div class="section-form">
               <form method="post" action="#">
@@ -231,22 +180,28 @@
                   <h2>開始發佈...</h2>
                   <p>讓附近的夥伴看見您的需求</p>
                 </div>
-                
-                <select class="image-picker show-labels show-html">
-                  <option data-img-src="../img/type_move.png" value="1"><strong>搬運</strong></option>
-                  <option data-img-src="../img/type_clean.png" value="2">清掃</option>
-                  <option data-img-src="../img/type_recept.png" value="3">接待</option>
-                  <option data-img-src="../img/type_guide.png" value="4">引導</option>
-                  <option data-img-src="../img/type_camera.png" value="5">攝像</option>
-                  <option data-img-src="../img/type_leader.png" value="6">領隊</option>
-                  <option data-img-src="../img/type_trans.png" value="7">翻譯</option>
-                  <option data-img-src="../img/type_others.png" value="8">其他</option>
-                </select>      
 
-                
-                
-                <input type="text" value="" placeholder="Name" name="name" />
-                <input type="button" value="確認發佈" tabindex="6"/>
+                <div>
+                  <select class="image-picker show-labels show-html">
+                    <option data-img-src="../img/type_move.png" value="1">搬運</option>
+                    <option data-img-src="../img/type_clean.png" value="2">清掃</option>
+                    <option data-img-src="../img/type_recept.png" value="3">接待</option>
+                    <option data-img-src="../img/type_guide.png" value="4">引導</option>
+                    <option data-img-src="../img/type_camera.png" value="5">攝像</option>
+                    <option data-img-src="../img/type_leader.png" value="6">領隊</option>
+                    <option data-img-src="../img/type_trans.png" value="7">翻譯</option>
+                    <option data-img-src="../img/type_others.png" value="8">其他</option>
+                  </select>      
+
+                  <div class="wrap">
+                    <div>
+                      <label for="need-topic">主題</label>
+                      <input id="need-topic" type="text" class="cool"/>
+                    </div>
+                  </div>
+                </div>
+
+
               </form>
             </div>
 

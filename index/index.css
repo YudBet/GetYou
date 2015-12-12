@@ -406,6 +406,7 @@ img#user-icon {
 ul.thumbnails {
 	list-style-type: none;
     margin: 50px;
+    margin-bottom: 20px;
     overflow: hidden;
 }
 
@@ -415,4 +416,53 @@ ul.thumbnails > li {
 
 .need-input {
 	width: 100%;
+}
+
+
+
+
+div.wrap {
+  width: 80%;
+  margin-left: 50px;
+  margin-right: 50px;
+  position: absolute;
+  font-family: "微軟正黑體";
+}
+
+div.wrap div {
+  position: relative;
+  margin: 10px 0;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  font-size: 25px;
+  margin: 10px;
+  padding: 0 10px;
+  background-color: white;
+  -webkit-transition: top .2s ease-in-out, 
+                      font-size .2s ease-in-out;
+  transition: top .2s ease-in-out, 
+              font-size .2s ease-in-out;
+}
+
+.active {
+  top: -18px;
+  font-size: 15px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border: 1px solid black;
+  border-width: 2px;
+  font-size: 20px;
+} 
+
+input[type=text]:focus {
+  outline: none;
+  border-color: orange;
 }

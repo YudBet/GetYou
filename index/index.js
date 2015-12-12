@@ -70,6 +70,16 @@ $("select.image-picker").imagepicker({
   }
 });
 
+$('input').on('focusin', function() {
+  $(this).parent().find('label').addClass('active');
+});
+
+$('input').on('focusout', function() {
+  if (!this.value) {
+    $(this).parent().find('label').removeClass('active');
+  }
+});
+
 $(".confirm-btn").click(function() {
   need = 1;
   $('#post-need-btn').html("POST A NEED");
