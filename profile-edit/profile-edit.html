@@ -6,7 +6,8 @@
   <title>User Profile - Edit</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="../bootstrap-3.3.6-dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Ionicons -->
@@ -18,8 +19,6 @@
   <link rel="stylesheet" href="../dist/css/skins/_all-skins.css">
   <!-- iCheck -->
   <link rel="stylesheet" href="../plugins/iCheck/flat/blue.css">
-  <script src="../plugins/iCheck/icheck.js"></script>
-  <script src="profile-edit.js"></script>
   <!-- Morris chart -->
   <link rel="stylesheet" href="../plugins/morris/morris.css">
   <!-- jvectormap -->
@@ -32,7 +31,12 @@
   <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <!-- star -->
   <link rel="stylesheet" href="profile-edit.css">
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <!-- jquery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!-- iCheck -->
+  <script src="../plugins/iCheck/icheck.js"></script>
+  <script src="profile-edit.js"></script>
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 
@@ -44,33 +48,65 @@
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <!--<span class="logo-mini"><b>G</b>ET</span>-->
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>GET </b>YOU</span>
+      <span class="logo-lg">Get You</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
       <div class="navbar-custom-menu">
+
         <ul class="nav navbar-nav">
           <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                      page and may cause design problems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> 5 new members joined
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../dist/img/user9-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Jae-Yi Lin</span>
+              <span id="header-usrname" class="hidden-xs">Jae-Yi Lin</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
                 <img src="../dist/img/user9-160x160.jpg" class="img-circle" alt="User Image">
-              <!-- Menu Body -->
-              <!-- Menu Footer-->
-              <!--<li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
-              </li>-->
             </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
@@ -83,8 +119,8 @@
       </div>
     </nav>
   </header>
-  <aside class="main-sidebar">
-  	<section class="sidebar" style="height: auto;">
+  <aside class="main-sidebar" style="height: auto;">
+  	<section class="sidebar">
       <!-- Sidebar user panel -->
       <div class="user-panel">
           <img class="profile-user-img img-responsive img-circle" src="../dist/img/user9-160x160.jpg" alt="User profile picture">
@@ -123,15 +159,7 @@
       <div class="row">
         <!-- /.col -->
         <div class="col-md-12">
-          <div class="nav-tabs-custom">
-            <ul class="nav nav-tabs">
-              <!--<li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
-              <li><a href="#timeline" data-toggle="tab">Timeline</a></li>-->
-              <li><a href="#settings" data-toggle="tab">Settings</a></li>
-            </ul>
-            <div class="tab-content">
-              <div class="tab-pane active" id="settings">
-                <form class="form-horizontal">
+            <form class="form-horizontal">
                   <div class="form-group">
                     <label for="inputName" class="col-sm-2 control-label">名字</label>
 
@@ -149,8 +177,10 @@
                   <div class="form-group">
                     <label for="inputName" class="col-sm-2 control-label">性別</label>
 
+
                     <div class="col-sm-10">
                       <input type="email" class="form-control" id="inputName" placeholder="女">
+                      <input tabindex="7" type="radio" id="minimal-radio-1" name="minimal-radio">
                     </div>
                   </div>
                   <div class="form-group">
@@ -176,18 +206,19 @@
                       <button type="submit" class="btn btn-danger">儲存</button>
                     </div>
                   </div>
-                </form>
-              </div>
-              <!-- /.tab-pane -->
-            </div>
-            <!-- /.tab-content -->
-          </div>
-          <!-- /.nav-tabs-custom -->
+            </form>
         </div>
         <!-- /.col -->
       </div>
       <!-- /.row -->
-
+      <script>
+          $(document).ready(function(){
+            $('input').iCheck({
+              checkboxClass: 'icheckbox_flat-blue',
+              radioClass: 'iradio_flat-blue'
+            });
+          });
+          </script>
     </section>
     <!-- /.content -->
   </div>
@@ -205,14 +236,14 @@
   <!--<div class="control-sidebar-bg"></div>-->
 </div>
 <script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="../bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
-<!-- Bootstrap 3.3.5 -->
-<script src="../bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <!-- Morris.js charts -->
 <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>-->
 <!--<script src="plugins/morris/morris.min.js"></script>-->
