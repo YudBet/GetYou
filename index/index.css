@@ -431,8 +431,15 @@ div.wrap {
 
 div.wrap div {
   position: relative;
-  margin: 10px 0;
+  margin: 15px 0;
 }
+
+div.wrap div div {
+	float: left;
+	width: 33%;
+	margin-right: 2px;
+}
+
 
 label {
   position: absolute;
@@ -441,6 +448,7 @@ label {
   margin: 10px;
   padding: 0 10px;
   background-color: white;
+  color: darkgrey;
   -webkit-transition: top .2s ease-in-out, 
                       font-size .2s ease-in-out;
   transition: top .2s ease-in-out, 
@@ -450,6 +458,7 @@ label {
 .active {
   top: -18px;
   font-size: 15px;
+  color: black;
 }
 
 input[type=text] {
@@ -457,8 +466,7 @@ input[type=text] {
   padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 5px;
-  border: 1px solid black;
-  border-width: 2px;
+  border: 2px solid #3c8dbc;
   font-size: 20px;
 } 
 
@@ -466,3 +474,37 @@ input[type=text]:focus {
   outline: none;
   border-color: orange;
 }
+
+
+table.table-condensed, table > thead > tr > th {
+	text-align: center;
+}
+
+td.day:hover {
+	background-color: lightgrey;
+}
+
+td.old, td.new {
+	color: lightgrey;
+}
+
+td.active {
+	background-color: orange;
+}
+
+td.today {
+	background-color: lightblue;
+}
+
+span.hour, span.minute {
+	font-size: 15px;
+	padding: 5px;
+}
+
+span.hour:hover, span.minute:hover {
+	background-color: lightgrey;
+}
+
+
+
+

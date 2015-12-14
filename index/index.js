@@ -145,16 +145,26 @@ $(document).ready(function() {
 	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(calendarControlDiv);
 
   $(".datepicker").datetimepicker({
-    format: 'yyyy年mm月dd日',
-    pickerPosition: "top-right",
-    weekStart: 1,
+    format: 'yyyy-mm-dd',
     startDate: '+0d',
-    autoclose: 1,
-    todayHighlight: 1,
     startView: 2,
     minView: 2,
+    maxViewMode: 0,
+    todayHighlight: 1,
+    autoclose: 1,
+    pickerPosition: "top-right",
     forceParse: 0,
     fontAwesome: 1
+  });
+
+  $(".timepicker").datetimepicker({
+    format: 'HH:ii p',
+    autoclose: true,
+    showMeridian: true,
+    startView: 1,
+    minView: 0,
+    autoclose: 1,
+    pickerPosition: "top-right"
   });
 });
 
