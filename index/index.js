@@ -80,6 +80,12 @@ $('input').on('focusout', function() {
   }
 });
 
+$('input').change(function() {
+  if (this.value) {
+    $(this).parent().find('label').addClass('active');
+  }
+});
+
 $(".confirm-btn").click(function() {
   need = 1;
   $('#post-need-btn').html("POST A NEED");
