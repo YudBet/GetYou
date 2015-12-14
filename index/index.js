@@ -236,11 +236,14 @@ $(document).ready(function() {
 var taskId = 1;
   
 $("#btn-plus").click(function () {
-  $("#task").append('<div id="task' + taskId + '"><input type="text" class="task" /><input type="button" value="-" onclick="delTask(' + taskId + ')"></div>');
+  var t = $("#task-to-plus").val();
+  $("#task").prepend('<div href="#" class="task' + taskId + ' list-group-item"><input type="text" class="task" value=' + t + ' /><div href="#" onclick="delTask(' + taskId + ')"><span class="fa fa-minus fa-3x"></span></div></div>');
   taskId++;
+  document.getElementById("task-to-plus") = "";
+  $("#task-to-plus").value = "";
 });
 
 function delTask(id) {
-  $("#task" + id).remove();
+  $(".task" + id).remove();
 }
 

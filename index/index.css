@@ -524,4 +524,22 @@ span.hour:hover, span.minute:hover {
 }
 
 
+div.list-group-item > div {
+	width: 10%;
+	padding-top: 10px;
+	padding-left: 3px;
+	color: #880000;
+	float: left;
+}
 
+.list-group-item > input[type=text] {
+	width: 90%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	border: 1px solid #3c8dbc;
+	font-size: 20px;
+}
+
+div#btn-plus {
+	color: #3c8dbc;
+}
