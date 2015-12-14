@@ -1,1 +1,220 @@
-profile.css
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,200italic,300italic);
+@import url(https://dl.dropboxusercontent.com/u/26380646/rocknroll/assets/style.css);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  -webkit-transition: .25s color linear;
+  -moz-transition: .25s color linear;
+  -o-transition: .25s color linear;
+  transition: .25s color linear;
+}
+
+article:hover time,
+.icon-rocknroll,
+.like-count {
+  -webkit-transition: .25s opacity linear;
+  -moz-transition: .25s opacity linear;
+  -o-transition: .25s opacity linear;
+  transition: .25s opacity linear;
+}
+
+.icon-rocknroll,
+.like-count,
+time {
+  -webkit-transition: .25s opacity linear;
+  -moz-transition: .25s opacity linear;
+  -o-transition: .25s opacity linear;
+  transition: .25s opacity linear;
+}
+
+/*
+ |---------------------------------
+ |
+ | Project Start
+ |
+ |---------------------------------
+ */
+.comments {
+  /*max-width: 500px;*/
+  min-width: 300px;
+  margin:20px auto;
+}
+.comments article {
+  position: relative;
+  border-bottom: solid 1px rgba(178, 179, 153, 0.15);
+  margin: 0 auto 50px auto;
+}
+.comments article:last-child {
+  border: none;
+}
+.comments article:hover time {
+  opacity: .75;
+}
+.comments article img {
+  position: absolute;
+  top: -10px;
+  left: -70px;
+  width: 50px;
+  height: 50px;
+  border-width: 0;
+  border-radius: 100%;
+}
+.comments article h4 {
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.comments article h4 a {
+  color: #404040;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+.comments article h4 a:hover {
+  color: #BFBFA8;
+}
+.comments article time {
+  color: #909090;
+  font-size: 15px;
+  margin-right: 40px;
+  opacity: 0;
+}
+.comments article time:hover {
+  opacity: .44;
+  cursor: pointer;
+}
+.comments article p {
+  margin-bottom: 50px;
+}
+.comments article p .reply {
+  color: #BFBFA8;
+  cursor: pointer;
+}
+
+.like-count,
+.icon-rocknroll {
+  position: absolute;
+  opacity: 0;
+}
+
+.like-count {
+  top: 4px;
+  right: 18px;
+  font-size: 15px;
+  margin-right: .05em;
+}
+
+.icon-rocknroll {
+  top: 7px;
+  right: 0;
+  background: none;
+  border: 0;
+  outline: none;
+  font-family: "icons";
+  font-size: 13px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.comments article:hover .icon-rocknroll,
+.comments article:hover .like-count {
+  opacity: .44;
+}
+
+.comments article:hover .icon-rocknroll:hover {
+  opacity: .75;
+}
+
+.active,
+active:hover,
+.comments article:hover .active {
+  opacity: .75;
+}
+
+.comments article:hover .active:hover {
+  opacity: .44;
+}
+
+/* Break */
+@media (max-width: 775px) {
+  section {
+    max-width: 400px;
+  }
+
+  .icon-rocknroll {
+    float: right;
+  }
+}
+/* Smartphones Landscape */
+@media (max-width: 600px) {
+  section {
+    max-width: 350px;
+  }
+
+  .comments article {
+    padding: 0 25px;
+  }
+
+  img {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .icon-rocknroll {
+    float: right;
+    top: 16px;
+  }
+
+  p {
+    margin-left: 0;
+  }
+
+  .closed {
+    width: 280px;
+  }
+}
+/* Smartphones Portrait */
+@media (max-width: 500px) {
+  body {
+    padding: 0;
+  }
+
+  section {
+    max-width: 270px;
+  }
+
+  img {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  .icon-rocknroll {
+    float: right;
+    top: 15px;
+  }
+
+  .like-count {
+    top: 12px;
+  }
+
+  p {
+    margin-left: 0;
+  }
+
+  .closed {
+    width: 270px;
+    text-align: center;
+    margin: 0 auto 50px auto;
+  }
+}
