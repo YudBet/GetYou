@@ -176,27 +176,26 @@
 
           <div id="post-page">
 
-            <div class="section-form">
-              <form method="post" action="#">
+   <div class="container-fluid">         
 
                 <div class="jumbotron">
                   <h2>開始發佈...</h2>
                   <p>讓附近的夥伴看見您的需求</p>
                 </div>
 
-                <div>
-                  <select class="image-picker show-labels show-html">
-                    <option data-img-src="../img/type_move.png" value="1">搬運</option>
-                    <option data-img-src="../img/type_clean.png" value="2">清掃</option>
-                    <option data-img-src="../img/type_recept.png" value="3">接待</option>
-                    <option data-img-src="../img/type_guide.png" value="4">引導</option>
-                    <option data-img-src="../img/type_camera.png" value="5">攝像</option>
-                    <option data-img-src="../img/type_leader.png" value="6">領隊</option>
-                    <option data-img-src="../img/type_trans.png" value="7">翻譯</option>
-                    <option data-img-src="../img/type_others.png" value="8">其他</option>
-                  </select>      
+                <select class="image-picker show-labels show-html">
+                  <option data-img-src="../img/type_move.png" value="1">搬運</option>
+                  <option data-img-src="../img/type_clean.png" value="2">清掃</option>
+                  <option data-img-src="../img/type_recept.png" value="3">接待</option>
+                  <option data-img-src="../img/type_guide.png" value="4">引導</option>
+                  <option data-img-src="../img/type_camera.png" value="5">攝像</option>
+                  <option data-img-src="../img/type_leader.png" value="6">領隊</option>
+                  <option data-img-src="../img/type_trans.png" value="7">翻譯</option>
+                  <option data-img-src="../img/type_others.png" value="8">其他</option>
+                </select> 
 
-                  <div class="wrap">
+
+                <div class="wrap">
                     <div class="input-2">
                       <div>
                         <label for="need-topic">
@@ -239,10 +238,16 @@
                         <input id="need-location" type="text" />
                       </div>
                     </div>
-                  </div>
                 </div>
 
-              </form>
+                <div class="wrap">
+                    <div>
+                        <div id="task"></div>
+                    </div>
+                    <input type="button" id="btn-plus" value="+" />
+                </div>
+
+
             </div>
 
           </div>

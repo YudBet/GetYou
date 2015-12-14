@@ -232,3 +232,15 @@ $(document).ready(function() {
   });
 });
 
+
+var taskId = 1;
+  
+$("#btn-plus").click(function () {
+  $("#task").append('<div id="task' + taskId + '"><input type="text" class="task" /><input type="button" value="-" onclick="delTask(' + taskId + ')"></div>');
+  taskId++;
+});
+
+function delTask(id) {
+  $("#task" + id).remove();
+}
+
