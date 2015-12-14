@@ -414,6 +414,10 @@ ul.thumbnails > li {
 	float: left;
 }
 
+ul.thumbnails > li:hover {
+	font-size: 20px;
+}
+
 .need-input {
 	width: 100%;
 }
@@ -430,23 +434,29 @@ div.wrap {
 }
 
 div.wrap div {
+  width: 100%;
   position: relative;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
-div.wrap div div {
+div.input-2 div {
 	float: left;
-	width: 33%;
-	margin-right: 2px;
+	width: 50%;
+	padding-right: 1px;
+}
+div.wrap div.input-3 div {
+	float: left;
+	width: 33.333%;
+	padding-right: 1px;
 }
 
 
 label {
   position: absolute;
   top: 0;
-  font-size: 25px;
-  margin: 10px;
-  padding: 0 10px;
+  font-size: 20px;
+  margin: 12px;
+  padding: 0 5px;
   background-color: white;
   color: darkgrey;
   -webkit-transition: top .2s ease-in-out, 
@@ -455,8 +465,12 @@ label {
               font-size .2s ease-in-out;
 }
 
+strong {
+	font-family: "微軟正黑體";
+}
+
 .active {
-  top: -18px;
+  top: -20px;
   font-size: 15px;
   color: black;
 }
