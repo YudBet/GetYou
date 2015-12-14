@@ -439,12 +439,17 @@ div.wrap div {
   margin: 5px 0;
 }
 
+div.input-1 div {
+	float: left;
+	width: 100%;
+	padding-right: 1px;
+}
 div.input-2 div {
 	float: left;
 	width: 50%;
 	padding-right: 1px;
 }
-div.wrap div.input-3 div {
+div.input-3 div {
 	float: left;
 	width: 33.333%;
 	padding-right: 1px;
