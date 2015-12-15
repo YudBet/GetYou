@@ -27,12 +27,14 @@ body {
 }
 
 .need-list {
+	padding-top: 50px;
     height: calc(100vh - 50px);
     background-color: white;
     overflow-y: scroll;
 }
 
 .need-map {
+	padding-top: 50px;
 	height: calc(100vh - 50px);
 	padding: 0px;
 }
@@ -542,4 +544,50 @@ div.list-group-item > div {
 
 div#btn-plus {
 	color: #3c8dbc;
+}
+
+
+blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+blockquote p {
+    padding-left: 50px;
+}
+
+blockquote {
+	padding: 0;
+	border: 0;
+}
+
+
+div.notice {
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 6px solid #3c8dbc;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+
+div.notice-info {
+    border-color: #3c8dbc;
+}
+
+textarea.form-control {
+	width: 100%;
+	font-size: 20px;
+}
+
+div.notice > blockquote > div.row {
+	padding: 0;
+}
+
+.img-circle {
+	padding-top: 5px;
+	padding-right: 5px;
 }
