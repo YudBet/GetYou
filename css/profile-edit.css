@@ -31,5 +31,10 @@ button {
 }
 
 .wrapper {
-position: static;
+	position: static;
 }
+
+.content-wrapper {
+	height: calc(85vh - 20px);
+}
+
