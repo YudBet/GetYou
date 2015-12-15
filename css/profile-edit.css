@@ -1,0 +1,35 @@
+/*profile star level*/
+.sidebar > div > div > i.fa-star,
+.sidebar > div > div > i.fa-star-o {
+	color: gold;
+	font-size: 20px;
+	text-align: center;
+}
+.sidebar > div > div {
+	padding-bottom: 15px;
+}
+
+/*profile user name*/
+.sidebar > div > h3 {
+	color: white;
+}
+
+form > div > label,
+form > div > div > label,
+form > div > div > input,
+button {
+	font-family: 微軟正黑體;
+}
+
+.logo-lg {
+	font-family: cursive;
+}
+/*sidebar*/
+.sidebar > div > h3,
+#header-usrname {
+	font-family: cursive, 微軟正黑體;
+}
+
+.wrapper {
+position: static;
+}
