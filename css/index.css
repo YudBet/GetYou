@@ -178,7 +178,7 @@ img#user-icon {
 		list-style: none;
 		font-family: 'Lato', sans-serif;
 		margin: 0px;
-		padding: 15px;
+		padding: 0;
 	}
 	.event-list > li {
 		background-color: rgb(255, 255, 255);
@@ -679,6 +679,19 @@ span.round-tab:hover {
 }
 
 
-button, textarea {
+button, textarea, p {
 	font-family: "微軟正黑體";
+}
+
+
+div#more-page > .notice {
+	margin: 25px;
+}
+
+blockquote img {
+	width: 80px;
+}
+
+blockquote > div > div {
+	padding-top: 10px;
 }
