@@ -37,4 +37,9 @@ button {
 .content-wrapper {
 	height: calc(85vh - 20px);
 }
-
+.nav>li>a:focus {
+	background: rgba(0,0,0,0) !important;
+}
+#sex-list label {
+	margin-right: 10px;
+}
