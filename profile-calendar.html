@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 2 | Dashboard</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="css/_all-skins.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="css/blue.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="css/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="css/jquery-jvectormap-1.2.2.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="css/datepicker3.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="css/daterangepicker-bs3.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="css/bootstrap3-wysihtml5.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/profile.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+<header class="main-header">
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <!--<span class="logo-mini"><b>G</b>ET</span>-->
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>GET </b>YOU</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+        <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                      page and may cause design problems
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-red"></i> 5 new members joined
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> You changed your username
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="img/user9-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Jae-Yi Lin</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="img/user9-160x160.jpg" class="img-circle" alt="User Image">
+              <!-- Menu Body -->
+              <!-- Menu Footer-->
+              <!--<li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>-->
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" class="sidebar-toggle" role="button">
+        		<span class="sr-only">Toggle navigation</span>
+      		</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <aside class="main-sidebar">
+  	<section class="sidebar" style="height: auto;">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="img/user9-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Jae-Yi Lin</p>
+        </div>
+      </div>
+      <ul class="sidebar-menu">
+        <li class="header">Profile</li>
+        <!--<div class="control">
+            <div class="Email-label">Email</div>
+            <input type="text" class="input-form-control" value="admin@gmail.com" readonly="">
+        </div>
+        <div class="control">
+            <div class="Email-label">Phone</div>
+            <input type="text" class="input-form-control" value="121314124" readonly="">
+        </div>-->
+        <li ><a href="#"><i class="fa fa-circle-o"></i> 個人檔案</a></li>
+        <li ><a href="#"><i class="fa fa-circle-o"></i> 行事曆</a></li>
+        <li ><a href="#"><i class="fa fa-circle-o"></i> 編輯個人資料</a></li>
+        <!--<li class="treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+          </a>
+        </li>-->
+    </section>
+  </aside>
+ 
+  <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <section class="col-lg-8">
+          <!--<div class="container">-->
+            <div class="nav-tabs-custom">
+            <!-- Tabs within a box -->
+            <ul class="nav nav-tabs pull-left">
+              <li class="active"><a href="#participate" data-toggle="tab">參加</a></li>
+              <li><a href="#recruit" data-toggle="tab">招募</a></li>
+              <!--<li class="pull-left header"><i class="fa fa-inbox"></i> Sales</li>-->
+            </ul>
+            <div class="tab-content no-padding">
+              <!-- Morris chart - Sales -->
+              <div class="chart tab-pane active" id="participate">
+                <h1>Red</h1>
+                <p>red red red red red red</p>
+                </div>
+              <div class="chart tab-pane " id="recruit">
+                <h1>Orange</h1>
+                <p>orange orange orange orange orange</p>
+              </div>
+              <!--<div class="chart tab-pane" id="participate" style="position: relative; height: 300px;"></div>-->
+            </div>
+          </div>
+            <!--<div id="content">
+
+              <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+                <li class="active"><a href="#red" data-toggle="tab">Red</a></li>
+                <li><a href="#orange" data-toggle="tab">Orange</a></li>
+              </ul>
+              <div id="my-tab-content" class="tab-content">
+                <div class="tab-pane active" id="red">
+                <h1>Red</h1>
+                <p>red red red red red red</p>
+                </div>
+                <div class="tab-pane" id="orange">
+                <h1>Orange</h1>
+                <p>orange orange orange orange orange</p>
+                </div>
+              </div>
+            </div>-->
+        </section>
+        
+        <div class="col-lg-4">
+          <div class="box box-solid bg-green-gradient">
+            <div class="box-header">
+              <i class="fa fa-calendar"></i>
+
+              <h3 class="box-title">Calendar</h3>
+              <!-- tools box -->
+              <div class="pull-right box-tools">
+                <!-- button with a dropdown -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-bars"></i></button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="#">Add new event</a></li>
+                    <li><a href="#">Clear events</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">View calendar</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-success btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i>
+                </button>
+              </div>
+              <!-- /. tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <!--The calendar -->
+              <div id="calendar" style="width: 100%"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.3.2
+    </div>
+    <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+    reserved.
+  </footer>
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <!--<div class="control-sidebar-bg"></div>-->
+</div>
+<script src="js/jQuery-2.1.4.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="js/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.5 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Morris.js charts -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>-->
+<!--<script src="plugins/morris/morris.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="js/morris.min.js"></script>
+<!-- Sparkline -->
+<script src="js/jquery.sparkline.min.js"></script>
+<!-- jvectormap -->
+<script src="js/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="js/jquery-jvectormap-world-mill-en.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="js/jquery.knob.js"></script>
+<!-- daterangepicker -->
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="js/bootstrap-datepicker.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="js/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Slimscroll -->
+<script src="js/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="js/fastclick.min.js"></script>
+<!-- AdminLTE App -->
+<script src="js/app.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="js/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="js/demo.js"></script>
+
+<script src="js/profile.js"></script>
+<script type="text/javascript" src="js/profile-calendar.js"></script>
+</body>
+</html>
