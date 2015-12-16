@@ -173,25 +173,24 @@
             </div>
             <div class="wizard">
               <div class="wizard-inner">
-                <div class="connecting-line"></div>
                 <ul class="nav nav-tabs" role="tablist">
                   <li role="presentation" class="active">
-                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="st.1 need_type">
+                    <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="志工類型">
                       <span class="round-tab"><i class="fa fa-th-large"></i></span>
                     </a>
                   </li>
                   <li role="presentation" class="disabled">
-                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="st.2 need_info">
+                    <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="基礎資料">
                       <span class="round-tab"><i class="fa fa-pencil"></i></span>
                     </a>
                   </li>
                   <li role="presentation" class="disabled">
-                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="st.3 need_todo_list">
+                    <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="服務項目">
                       <span class="round-tab"><i class="fa fa-list-ul"></i></span>
                     </a>
                   </li>
                   <li role="presentation" class="disabled">
-                    <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="st.4 need_saying">
+                    <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="想說的話">
                       <span class="round-tab"><i class="fa fa-ellipsis-h"></i></span>                      
                     </a>
                   </li>
@@ -257,42 +256,41 @@
                       </div>
                     </div>
                     <ul class="list-inline pull-right">
-                      <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                      <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                      <li><button type="button" class="btn btn-default prev-step">上一步</button></li>
+                      <li><button type="button" class="btn btn-primary next-step">儲存並繼續</button></li>
                     </ul>
                   </div>
                   <div class="tab-pane" role="tabpanel" id="step3">
                     <div class="list-group wrap">
                       <div href="#" class="list-group-item">
-                        <input type="text" id="task-to-plus" />
+                        <input type="text" id="task-to-plus" placeholder="服務項目，輸入完成後於左方按鈕新增" />
                         <div id="btn-plus"><span class="fa fa-plus fa-3x"></span></div>
                       </div>
                       <div id="task"></div>
                     </div>
                     <ul class="list-inline pull-right">
-                      <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                      <li><button type="button" class="btn btn-default next-step">Skip</button></li>
-                      <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                      <li><button type="button" class="btn btn-default prev-step">上一步</button></li>
+                      <li><button type="button" class="btn btn-primary btn-info-full next-step">儲存並繼續</button></li>
                     </ul>
                   </div>
                   <div class="tab-pane" role="tabpanel" id="complete">
                     <div class="notice notice-info">
                       <blockquote>
                         <div class="row">
-                          <div class="col-sm-2">
-                            <img class="img-circle" src="https://lh3.googleusercontent.com/-CxXg7_7ylq4/AAAAAAAAAAI/AAAAAAAAAQ8/LhCIKQC5Aq4/s46-c-k-no/photo.jpg" style="width: 100px;height:100px;">
-                          </div>
                           <div class="col-sm-10">
                             <!-- for more page
                             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit!<small>Someone famous</small></p>
                             -->
-                            <textarea class="form-control" rows="7" id="need-saying"></textarea>
+                            <textarea class="form-control" rows="5" id="need-saying" placeholder="想說的話..."></textarea>
                           </div>
                         </div>
                       </blockquote> 
                     </div>
+                    <ul class="list-inline pull-right">
+                      <li><button type="button" class="btn btn-default next-step">跳過並發佈</button></li>
+                      <li><button type="button" class="btn btn-success btn-info-full next-step">發佈 <i class="fa fa-exclamation"></i></button></li>
+                    </ul>
                   </div>
-                  <div class="clearfix"></div>
                 </div>
               </form>
             </div>

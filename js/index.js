@@ -150,6 +150,29 @@ $(document).ready(function() {
 	calendarControlDiv.index = 1;
 	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(calendarControlDiv);
 
+  
+  map_searchbox(map);
+
+  datetime_picker();
+  tab_func();
+});
+
+
+var taskId = 1;
+  
+$("#btn-plus").click(function () {
+  var t = $("#task-to-plus").val();
+  $("#task").prepend('<div href="#" class="task' + taskId + ' list-group-item"><input type="text" class="task" value=' + t + ' /><div href="#" onclick="delTask(' + taskId + ')"><span class="fa fa-minus fa-3x"></span></div></div>');
+  taskId++;
+});
+
+function delTask(id) {
+  $(".task" + id).remove();
+}
+
+
+
+var map_searchbox = function(map) {
   // Create the search box and link it to the UI element.
   var input = document.getElementById('need-location');
   var searchBox = new google.maps.places.SearchBox(input);
@@ -205,9 +228,9 @@ $(document).ready(function() {
     });
     map.fitBounds(bounds);
   });
+}
 
-
-
+var datetime_picker = function() {
   $(".datepicker").datetimepicker({
     format: 'yyyy-mm-dd',
     startDate: '+0d',
@@ -230,18 +253,35 @@ $(document).ready(function() {
     autoclose: 1,
     pickerPosition: "top-right"
   });
-});
-
-
-var taskId = 1;
-  
-$("#btn-plus").click(function () {
-  var t = $("#task-to-plus").val();
-  $("#task").prepend('<div href="#" class="task' + taskId + ' list-group-item"><input type="text" class="task" value=' + t + ' /><div href="#" onclick="delTask(' + taskId + ')"><span class="fa fa-minus fa-3x"></span></div></div>');
-  taskId++;
-});
-
-function delTask(id) {
-  $(".task" + id).remove();
 }
 
+var tab_func = function () {
+    $('.nav-tabs > li a[title]').tooltip();
+
+    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+        var $target = $(e.target);
+    });
+
+    $(".next-step").click(function (e) {
+        var $active = $('.wizard .nav-tabs li.active');
+        $active.next().removeClass('disabled');
+        nextTab($active);
+    });
+    $(".prev-step").click(function (e) {
+        var $active = $('.wizard .nav-tabs li.active');
+        prevTab($active);
+    });
+}
+
+function nextTab(elem) {
+    $(elem).next().find('a[data-toggle="tab"]').click();
+}
+function prevTab(elem) {
+    $(elem).prev().find('a[data-toggle="tab"]').click();
+}
+
+$('.thumbnail').click(function() {
+  var $active = $('.wizard .nav-tabs li.active');
+  $active.next().removeClass('disabled');
+  nextTab($active);
+});

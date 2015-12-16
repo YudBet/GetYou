@@ -398,8 +398,8 @@ img#user-icon {
 
 
 .thumbnail {
-	width: 105px;
-	height: 105px;
+	width: 9vw;
+	height: 9vw;
 	padding: 1;
 	font-family: "微軟正黑體";
 	text-align: center;
@@ -408,7 +408,6 @@ img#user-icon {
 ul.thumbnails {
 	list-style-type: none;
     margin: 50px;
-    margin-bottom: 20px;
     overflow: hidden;
 }
 
@@ -418,12 +417,12 @@ ul.thumbnails > li {
 
 ul.thumbnails > li:hover {
 	font-size: 20px;
+	transition: 0.3s ease-in-out;
 }
 
 .need-input {
 	width: 100%;
 }
-
 
 
 
@@ -579,13 +578,15 @@ div.notice-info {
 }
 
 textarea.form-control {
-	width: 100%;
+	width: 120%;
 	font-size: 20px;
+	border: 1px solid #3c8dbc;
 }
 
 div.notice > blockquote > div.row {
 	padding: 0;
 }
+
 
 .img-circle {
 	padding-top: 5px;
@@ -594,67 +595,52 @@ div.notice > blockquote > div.row {
 
 
 
-    .wizard .nav-tabs {
-        position: relative;
-        margin-bottom: 0;
-        border-bottom-color: #e0e0e0;
-    }
+.wizard .nav-tabs {
+    position: relative;
+    border-bottom-color: #3c8dbc;
+}
 
-    .wizard > div.wizard-inner {
-        position: relative;
-    }
-
-.connecting-line {
-    height: 2px;
-    background: #e0e0e0;
-    position: absolute;
-    width: 40%;
-    left: 0;
-    right: 0;
-    top: 50%;
-    z-index: 1;
+.wizard > div.wizard-inner {
+    position: relative;
 }
 
 .wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
     color: #555555;
-    cursor: default;
     border: 0;
     border-bottom-color: transparent;
 }
 
 span.round-tab {
-    width: 70px;
-    height: 70px;
-    line-height: 70px;
+    width: 60px;
+    height: 60px;
+    line-height: 58px;
+    cursor: pointer;
     display: inline-block;
-    border-radius: 100px;
-    background: #fff;
-    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    background: #4b6ea8;
     z-index: 2;
     position: absolute;
-    left: 0;
     text-align: center;
     font-size: 25px;
 }
-span.round-tab i{
-    color:#555555;
+span.round-tab i {
+    color: white;
 }
+
 .wizard li.active span.round-tab {
-    background: #fff;
-    border: 2px solid #5bc0de;
-    
-}
-.wizard li.active span.round-tab i {
-    color: #5bc0de;
+    background: orange;
+    transition: 0.5s ease-in-out;
 }
 
 span.round-tab:hover {
     color: #333;
-    border: 2px solid #333;
+    border: 3px solid #333;
+    line-height: 55px;
+    transition: 0.3s ease-in-out;
 }
 
 .wizard .nav-tabs > li {
-    width: 12%;
+    width: 25%;
 }
 
 .wizard li:after {
@@ -662,21 +648,17 @@ span.round-tab:hover {
     position: absolute;
     left: 46%;
     opacity: 0;
-    margin: 0 auto;
-    bottom: 0px;
-    border: 5px solid transparent;
-    border-bottom-color: #5bc0de;
-    transition: 0.1s ease-in-out;
 }
 
 .wizard li.active:after {
-    position: absolute;
-    left: 46%;
     opacity: 1;
     margin: 0 auto;
-    bottom: 0px;
-    border: 10px solid transparent;
-    border-bottom-color: #5bc0de;
+    border: 7px solid transparent;
+    border-bottom-color: #3c8dbc;
+}
+
+.wizard li.active {
+	top: -15px;
 }
 
 .wizard .nav-tabs > li a {
@@ -688,4 +670,15 @@ span.round-tab:hover {
 }
 
 
+.tab-pane {
+	margin-top: 5vh;
+}
 
+.tab-pane > ul {
+	margin-top: 15px;
+}
+
+
+button, textarea {
+	font-family: "微軟正黑體";
+}
