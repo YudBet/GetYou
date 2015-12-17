@@ -17,7 +17,8 @@
 form > div > label,
 form > div > div > label,
 form > div > div > input,
-button {
+button,
+.sidebar-menu > li {
 	font-family: 微軟正黑體;
 }
 
