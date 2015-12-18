@@ -145,9 +145,6 @@ img#user-icon {
 	height: 250px;
 }
 
-.more-tasks {
-	padding-top: 20px;
-}
 
 .more-menbers {
 	width: 100%;
@@ -157,19 +154,6 @@ img#user-icon {
 	position: absolute;
     bottom: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -518,7 +502,7 @@ strong {
 	font-family: "微軟正黑體";
 }
 
-.active {
+label.active {
   top: -20px;
   font-size: 15px;
   color: black;
@@ -610,16 +594,13 @@ blockquote {
 div.notice {
     padding: 15px;
     background-color: #fafafa;
-    border-left: 6px solid #3c8dbc;
+    border-left: 6px solid #5bc0de;
     margin-bottom: 10px;
     -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
        -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
             box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
 }
 
-div.notice-info {
-    border-color: #3c8dbc;
-}
 
 textarea.form-control {
 	width: 120%;
@@ -741,6 +722,7 @@ blockquote > div > div {
 }
 
 
+<<<<<<< HEAD
 /*.social>li>a>.label {
     position: absolute;
     top: 9px;
@@ -786,4 +768,9 @@ blockquote > div > div {
     text-align: center;
     background-color: #777;
     border-radius: 10px;
+=======
+
+.detail {
+	margin: 10px;
+>>>>>>> eb133b32c737bc78af9a279e61eb01dcdb453ce6
 }
