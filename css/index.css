@@ -273,7 +273,11 @@ img#user-icon {
 
 	.facebook a,
 	.follow a,
-	.more a {
+	.more a 
+	.leave a
+	.cancel a
+	.certificate a 
+	.star a {
 		display: block;
 		width: 100%;
 		color: rgb(75, 110, 168) !important;
@@ -282,19 +286,59 @@ img#user-icon {
 	.follow a {
 		color: rgb(100, 100, 100) !important;
 	}
+
 	.more a {
 		color: rgb(0, 0, 0) !important;
 	}
+
+	.leave a {
+		color: rgb(0, 0, 0) !important;
+	}
+
+	.cancel a {
+		color: rgb(0, 0, 0) !important;
+	}
+
+	.certificate a {
+		color: rgb(0, 0, 0) !important;
+	}
+
+	.star a {
+		color: rgb(0, 0, 0) !important;
+	}
+
 	.facebook:hover a {
 		color: rgb(255, 255, 255) !important;
 		background-color: rgb(75, 110, 168) !important;
 	}
+
 	.follow:hover a {
 		color: rgb(255, 255, 255) !important;
 		background-color: rgb(221, 75, 57) !important;
 		
 	}
+
 	.more:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(79, 213, 248) !important;
+	}
+
+	.leave:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(79, 213, 248) !important;
+	}
+
+	.cancel:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(79, 213, 248) !important;
+	}
+
+	.certificate:hover a {
+		color: rgb(255, 255, 255) !important;
+		background-color: rgb(79, 213, 248) !important;
+	}
+
+	.star:hover a {
 		color: rgb(255, 255, 255) !important;
 		background-color: rgb(79, 213, 248) !important;
 	}
@@ -694,4 +738,52 @@ blockquote img {
 
 blockquote > div > div {
 	padding-top: 10px;
+}
+
+
+/*.social>li>a>.label {
+    position: absolute;
+    top: 9px;
+    right: 7px;
+    text-align: center;
+    font-size: 9px;
+    padding: 2px 3px;
+    line-height: .9;
+	}
+		@media (min-width: 768px) {
+	.social>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+		}
+	}
+
+	.social>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+	}
+
+	.social {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+	}*/
+	
+.badge-warning {
+    background-color: #FDD761;
+}
+
+.badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #777;
+    border-radius: 10px;
 }
