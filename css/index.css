@@ -722,35 +722,7 @@ blockquote > div > div {
 }
 
 
-<<<<<<< HEAD
-/*.social>li>a>.label {
-    position: absolute;
-    top: 9px;
-    right: 7px;
-    text-align: center;
-    font-size: 9px;
-    padding: 2px 3px;
-    line-height: .9;
-	}
-		@media (min-width: 768px) {
-	.social>li>a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-		}
-	}
 
-	.social>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-	}
-
-	.social {
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-	}*/
-	
 .badge-warning {
     background-color: #FDD761;
 }
@@ -768,9 +740,8 @@ blockquote > div > div {
     text-align: center;
     background-color: #777;
     border-radius: 10px;
-=======
+}
 
 .detail {
 	margin: 10px;
->>>>>>> eb133b32c737bc78af9a279e61eb01dcdb453ce6
 }
