@@ -1,0 +1,40 @@
+article > h4 > i {
+	float: right;
+}
+.heart-num {
+	padding-top: 15px;
+}
+.comment-heart {
+	margin-left: 10px;
+}
+.badge-add {
+	color: red;
+}
+.img-large {
+	width: 100px !important;
+	height: 100px !important;
+}
+article > h4 > div {
+	font-family: 微軟正黑體;
+}
+.like {
+	//margin-left: 50px;
+}
+
+img.img-small {
+	width: 50px;
+	height: 50px;
+}
+.badge {
+	margin-bottom: 50px;
+}
+.padding-l {
+	margin-left: 15px;
+}
+.comments {
+	margin-left: 20px;
+	margin-top: 0px;
+}
+ul > li {
+	border-bottom: inset;
+}

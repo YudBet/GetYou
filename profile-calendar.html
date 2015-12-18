@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
+  <title>Get You-profile</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   
@@ -33,6 +33,7 @@
   <link rel="stylesheet" type="text/css" href="css/profile.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" href="css/ionic.min.css">
+  <link rel="stylesheet" type="text/css" href="css/profile-calendar.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -117,15 +118,15 @@
           <!-- Control Sidebar Toggle Button -->
           <li>
             <a href="#" class="sidebar-toggle" role="button">
-        		<span class="sr-only">Toggle navigation</span>
-      		</a>
+            <span class="sr-only">Toggle navigation</span>
+          </a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
   <aside class="main-sidebar">
-  	<section class="sidebar" style="height: auto;">
+    <section class="sidebar" style="height: auto;">
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
@@ -209,34 +210,73 @@
                 </li>
                 <!--滑動視窗-->
                 <div id="collapse1" class="panel-collapse collapse">
-        			<!--<ul class="list-group">
-          				<li class="list-group-item">One</li>
-          				<li class="list-group-item">Two</li>
-          				<li class="list-group-item">Three</li>
-        			</ul>-->
-        			          <article>
-              <img src="img/user9-160x160.jpg">
-              <h4>
+              <!--<ul class="list-group">
+                  <li class="list-group-item">One</li>
+                  <li class="list-group-item">Two</li>
+                  <li class="list-group-item">Three</li>
+              </ul>-->
+              <section>
+                <ul>
+                    <li>
+                      <div class="col-lg-2"></div>
+                      <div class="col-lg-10">
+                        <div class="row">
+                          <div class="col-lg-1"><img class="img-circle img-small" src="img/user9-160x160.jpg"></div>
+                          <div class="col-lg-9 padding-l">
+                            <h4>Venkman
+                              <div><time>2015/12/16</time></div>
+                            </h4>
+                          </div>
+                          <div class="col-lg-2">
+                            <i class="like">
+                              <div class="button icon-left button-clear ion-heart"><span class="comment-heart">5</span></div>
+                            </i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-3"></div>
+                          <p class="col-lg-9 comments">Back off, man. I'm a scientist.</p>
+                      </div>
 
-                <i class="icon-right">
-                  <div class="button icon-left button-clear ion-heart"><span class="comment-heart">5</span></div>
-                </i>
-                Venkman
-                <div><time>2015/12/16</time></div>
-              </h4>
+                    </li>
+                    <li>
+                      <div class="col-lg-2"></div>
+                      <div class="col-lg-10">
+                        <div class="row">
+                          <div class="col-lg-1"><img class="img-circle img-small" src="img/user9-160x160.jpg"></div>
+                          <div class="col-lg-9 padding-l">
+                            <h4>Venkman
+                              <div><time>2015/12/16</time></div>
+                            </h4>
+                          </div>
+                          <div class="col-lg-2">
+                            <i class="like">
+                              <div class="button icon-left button-clear ion-heart"><span class="comment-heart">5</span></div>
+                            </i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-3"></div>
+                          <p class="col-lg-9 comments">Back off, man. I'm a scientist.</p>
+                      </div>
+                      <div class="divider"></div>
 
-            <p>Back off, man. I'm a scientist.</p>
-          </article>
-      			</div>
-      			<div id="collapse2" class="panel-collapse collapse">
-        			<ul class="list-group">
-          				<li class="list-group-item">One</li>
-          				<li class="list-group-item">Two</li>
-          				<li class="list-group-item">Three</li>
-        			</ul>
-      			</div>
-      			<!--滑動視窗 end-->
-      			<li>
+                    </li>
+                </ul>
+                
+              </section>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse">
+              <ul class="list-group">
+                  <li class="list-group-item">One</li>
+                  <li class="list-group-item">Two</li>
+                  <li class="list-group-item">Three</li>
+              </ul>
+            </div>
+            <!--滑動視窗 end-->
+            <li>
                   <time datetime="2014-07-31 1600">
                     <span class="day">31</span>
                     <span class="month">Jan</span>
@@ -334,13 +374,13 @@
                     <ul>
                       <li class="certificate" style="width:34%;"><a data-toggle="collapse" href="#collapse3"><span class="fa fa-certificate"></span></a></li>
                         <div id="collapse3" class="panel-collapse collapse">
-        					<ul class="list-group">
-          					<li class="list-group-item">One</li>
-          					<li class="list-group-item">Two</li>
-          					<li class="list-group-item">Three</li>
-        				</ul>
-        					<div class="panel-footer">Footer</div>
-      					</div>
+                  <ul class="list-group">
+                    <li class="list-group-item">One</li>
+                    <li class="list-group-item">Two</li>
+                    <li class="list-group-item">Three</li>
+                </ul>
+                  <div class="panel-footer">Footer</div>
+                </div>
                       <li class="more" style="width:33%;"><a href="#"><span class="fa fa-ellipsis-h"></span></a></li>
                       <li class="star" style="width:33%;"><a href="#"><span class="fa fa-star"></span></a></li>
                     </ul>
