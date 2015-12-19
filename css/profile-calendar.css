@@ -7,7 +7,8 @@ article > h4 > i {
 .comment-heart {
 	margin-left: 10px;
 }
-.badge-add {
+.badge-add,
+.like {
 	color: red;
 }
 .img-large {
@@ -16,9 +17,6 @@ article > h4 > i {
 }
 article > h4 > div {
 	font-family: 微軟正黑體;
-}
-.like {
-	//margin-left: 50px;
 }
 
 img.img-small {
@@ -35,6 +33,24 @@ img.img-small {
 	margin-left: 20px;
 	margin-top: 0px;
 }
-ul > li {
+ul.slide > li {
 	border-bottom: inset;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	margin-bottom: 10px;
+
 }
+ul.event > li{
+	margin-bottom: 0;
+}
+div.container-badge {
+   height: 6em;
+   position: relative 
+}              /* 1 */
+div.container-badge h4 {
+   margin: 0;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%)
+   font-family:微軟正黑體; 
+}   /* 4 */
