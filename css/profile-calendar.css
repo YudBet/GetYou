@@ -1,15 +1,13 @@
 article > h4 > i {
 	float: right;
 }
-.heart-num {
-	padding-top: 15px;
-}
 .comment-heart {
-	margin-left: 10px;
+	//margin-left: 10px;
+	color:lightgrey;
 }
 .badge-add,
-.like {
-	color: red;
+div.like {
+	color: red !important;
 }
 .img-large {
 	width: 100px !important;
