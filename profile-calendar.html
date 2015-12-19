@@ -202,14 +202,14 @@
                   </div>
                   <div class="social">
                     <ul>
-                      <li class="follow" style="width:34%;"><a data-toggle="collapse" href="#collapse1"><span class="fa fa-bell"></span></a></li>
-                      <li class="more" style="width:33%;"><a data-toggle="collapse" href="#collapse2"><span class="fa fa-ellipsis-h"></span></a></li>
-                      <li class="leave" style="width:33%;"><a href="#"><span class="fa fa-sign-out"></span></a></li>
+                      <li class="follow" style="width:34%;"><a data-toggle="collapse" href="#follow1-1"><span class="fa fa-bell"></span></a></li>
+                      <li class="more" style="width:33%;"><a data-toggle="collapse" href="#more1-1"><span class="fa fa-ellipsis-h"></span></a></li>
+                      <li class="leave" style="width:33%;"><a data-toggle="collapse" href="#leave1-1"><span class="fa fa-sign-out"></span></a></li>
                     </ul>
                   </div>
                 </li>
                 <!--滑動視窗-->
-                <div id="collapse1" class="panel-collapse collapse">
+                <div id="follow1-1" class="panel-collapse collapse">
               <section>
                 <ul class="slide">
                     <li>
@@ -258,37 +258,29 @@
                       <div class="divider"></div>
 
                     </li>
-                    <!--badge-->
-                    <li>
-                      <div class="col-lg-2"></div>
-                      <div class="col-lg-10">
-                        <div class="row">
-                          <div class="col-lg-3"><img class="img-circle img-large" src="img/badge.png"></div>
-                          <div class="col-lg-9 padding-l container-badge">
-                              <h4>
-                                <div>服務次數: 3<span class="badge-add">+1</span></div>
-                                <div>合作人數: 10<span class="badge-add">+5</span></div>
-                              </h4>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                      </div>
-                    </li>
                 </ul>
-                <!-- slide -->
-                
+                <!-- slide -->   
               </section>
             </div>
-            <div id="collapse2" class="panel-collapse collapse">
-              <ul class="list-group">
-                  <li class="list-group-item">One</li>
-                  <li class="list-group-item">Two</li>
-                  <li class="list-group-item">Three</li>
-              </ul>
+            <div id="more1-1" class="panel-collapse collapse">
+                    <ul class="list-group">
+                      <li class="list-group-item active"><span class="fa fa-list-ul"></span> 服務項目</li>
+                      <li class="list-group-item">把家具搬上貨車</li>
+                      <li class="list-group-item">稍微清掃房子</li>
+                      <li class="list-group-item">將家具搬下貨車</li>
+                      <li class="list-group-item">排好大型家具</li>
+                    </ul>
+                  </div>
+            <div id="leave1-1" class="panel-collapse collapse">
+              <div class="form-group">
+                <input type="text" class="form-control" id="RestaurantText" placeholder="輸入活動名稱以離開">
+                    </div>                    
+                <div>
+                  <button type="button" id="send" class="btn btn-primary">確認</button>   
+                </div>
             </div>
             <!--滑動視窗 end-->
-            <li>
+            <!--<li>
                   <time datetime="2014-07-31 1600">
                     <span class="day">31</span>
                     <span class="month">Jan</span>
@@ -317,7 +309,7 @@
                       <li class="more" style="width:33%;"><a href="#"><span class="fa fa-ellipsis-h"></span></a></li>
                     </ul>
                   </div>
-                </li>
+            </li>-->
               </ul>
                 <!--<h1>Red</h1>
                 <p>red red red red red red</p>-->
@@ -351,11 +343,20 @@
                   <div class="social">
                     <ul>
                       <li class="follow" style="width:34%;"><a href="#"><span class="fa fa-bell"></span></a></li>
-                      <li class="more" style="width:33%;"><a href="#"><span class="fa fa-ellipsis-h"></span></a></li>
+                      <li class="more" style="width:33%;"><a data-toggle="collapse" href="#more2-1"><span class="fa fa-ellipsis-h"></span></a></li>
                       <li class="cancel" style="width:33%;"><a href="#"><span class="fa fa-times"></span></a></li>
                     </ul>
                   </div>
                 </li>
+                <div id="more2-1" class="panel-collapse collapse">
+                    <ul class="list-group">
+                      <li class="list-group-item active"><span class="fa fa-list-ul"></span> 服務項目</li>
+                      <li class="list-group-item">把家具搬上貨車</li>
+                      <li class="list-group-item">稍微清掃房子</li>
+                      <li class="list-group-item">將家具搬下貨車</li>
+                      <li class="list-group-item">排好大型家具</li>
+                    </ul>
+                  </div>
               </ul>
               </div>
                 <div class="chart tab-pane" id="finished">
@@ -384,42 +385,36 @@
                   </div>
                   <div class="social">
                     <ul>
-                      <li class="certificate" style="width:34%;"><a data-toggle="collapse" href="#collapse3"><span class="fa fa-certificate"></span></a></li>
-                        <div id="collapse3" class="panel-collapse collapse">
-                  <ul class="list-group">
-                    <li class="list-group-item">One</li>
-                    <li class="list-group-item">Two</li>
-                    <li class="list-group-item">Three</li>
-                </ul>
-                  <div class="panel-footer">Footer</div>
-                </div>
+                      <li class="certificate" style="width:34%;"><a data-toggle="collapse" href="#certificate1"><span class="fa fa-certificate"></span></a></li>
                       <li class="more" style="width:33%;"><a href="#"><span class="fa fa-ellipsis-h"></span></a></li>
                       <li class="star" style="width:33%;"><a href="#"><span class="fa fa-star"></span></a></li>
                     </ul>
                   </div>
                 </li>
+                <div id="certificate1" class="panel-collapse collapse">
+                  <!--badge-->
+                    <li>
+                      <div class="col-lg-2"></div>
+                      <div class="col-lg-10">
+                        <div class="row">
+                          <div class="col-lg-3"><img class="img-circle img-large" src="img/badge.png"></div>
+                          <div class="col-lg-9 padding-l container-badge">
+                              <h4>
+                                <div>服務次數: 3<span class="badge-add">+1</span></div>
+                                <div>合作人數: 10<span class="badge-add">+5</span></div>
+                              </h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                      </div>
+                    </li>
+                </div>
               </ul>
               </div>
               <!--<div class="chart tab-pane" id="participate" style="position: relative; height: 300px;"></div>-->
             </div>
           </div>
-            <!--<div id="content">
-
-              <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-                <li class="active"><a href="#red" data-toggle="tab">Red</a></li>
-                <li><a href="#orange" data-toggle="tab">Orange</a></li>
-              </ul>
-              <div id="my-tab-content" class="tab-content">
-                <div class="tab-pane active" id="red">
-                <h1>Red</h1>
-                <p>red red red red red red</p>
-                </div>
-                <div class="tab-pane" id="orange">
-                <h1>Orange</h1>
-                <p>orange orange orange orange orange</p>
-                </div>
-              </div>
-            </div>-->
         </section>
         
         <div class="col-lg-4">

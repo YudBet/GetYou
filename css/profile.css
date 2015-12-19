@@ -128,7 +128,6 @@ time {
   opacity: .75;
 }
 
-.active,
 active:hover,
 .comments article:hover .active {
   opacity: .75;

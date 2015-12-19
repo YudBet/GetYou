@@ -56,3 +56,8 @@ div.container-badge h4 {
    transform: translate(0, -50%)
    font-family:微軟正黑體; 
 }   /* 4 */
+.input-group-addon.primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
