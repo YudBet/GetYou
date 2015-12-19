@@ -18,7 +18,7 @@ article > h4 > div {
 	font-family: 微軟正黑體;
 }
 .like {
-	//margin-left: 50px;
+	margin-left: 50px;
 }
 
 img.img-small {
@@ -35,6 +35,6 @@ img.img-small {
 	margin-left: 20px;
 	margin-top: 0px;
 }
-ul > li {
+ul.slide > li {
 	border-bottom: inset;
 }
