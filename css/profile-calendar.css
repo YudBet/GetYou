@@ -13,7 +13,7 @@ div.like {
 	width: 100px !important;
 	height: 100px !important;
 }
-article > h4 > div {
+div > h4 > div {
 	font-family: 微軟正黑體;
 }
 
