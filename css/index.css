@@ -148,12 +148,21 @@ img#user-icon {
 
 .more-menbers {
 	width: 100%;
-	height: 100px;
+	height: 75px;
 	position: absolute;
 }
 
 .more-menbers ul li {
-	display: inline-block;
+	float: left;
+}
+
+.more-menbers div ul {
+	list-style: none;
+	padding-left: calc(50% - 120px);
+}
+
+.more-menbers div ul img {
+	width: 35px;
 }
 
     
@@ -497,10 +506,6 @@ label {
               font-size .2s ease-in-out;
 }
 
-strong {
-	font-family: "微軟正黑體";
-}
-
 label.active {
   top: -20px;
   font-size: 15px;
@@ -587,11 +592,13 @@ blockquote p {
 blockquote {
 	padding: 0;
 	border: 0;
+	margin: 0 0 5px;
 }
 
 
 div.notice {
     padding: 15px;
+    padding-bottom: 1px;
     background-color: #fafafa;
     border-left: 6px solid #5bc0de;
     margin-bottom: 10px;
@@ -613,8 +620,7 @@ div.notice > blockquote > div.row {
 
 
 .img-circle {
-	padding-top: 5px;
-	padding-right: 5px;
+	margin-right: 5px;
 }
 
 
@@ -703,17 +709,18 @@ span.round-tab:hover {
 }
 
 
-button, textarea, p {
+button, textarea, p, a, strong, div {
 	font-family: "微軟正黑體";
 }
 
 
 div#more-page > .notice {
 	margin: 25px;
+	margin-bottom: 0;
 }
 
 blockquote img {
-	width: 80px;
+	width: 70px;
 }
 
 blockquote > div > div {
@@ -743,5 +750,5 @@ blockquote > div > div {
 
 .detail {
 	margin: 10px;
-	margin-top: 100px;
+	margin-top: 75px;
 }
