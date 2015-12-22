@@ -31,17 +31,17 @@
   <link rel="stylesheet" href="css/bootstrap3-wysihtml5.min.css">
 
   <link rel="stylesheet" type="text/css" href="css/profile.css">
+  <link rel="stylesheet" type="text/css" href="css/profile-edit.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="stylesheet" href="css/ionic.min.css">
   <link rel="stylesheet" type="text/css" href="css/profile-calendar.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
-<header class="main-header">
+  <header class="main-header">
     <!-- Logo -->
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <!--<span class="logo-mini"><b>G</b>ET</span>-->
       <!-- logo for regular state and mobile devices -->
@@ -92,68 +92,45 @@
               </li>
               <li class="footer"><a href="#">View all</a></li>
             </ul>
-          </li>
+        </li>
           <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <li class="user user-menu">
+            <a href="#">
               <img src="img/user9-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Jae-Yi Lin</span>
+              <span id="header-usrname">Jae-Yi Lin</span>
             </a>
-            <ul class="dropdown-menu">
-              <!-- User image -->
-              <li class="user-header">
-                <img src="img/user9-160x160.jpg" class="img-circle" alt="User Image">
-              <!-- Menu Body -->
-              <!-- Menu Footer-->
-              <!--<li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
-              </li>-->
-            </ul>
           </li>
           <!-- Control Sidebar Toggle Button -->
           <li>
-            <a href="#" class="sidebar-toggle" role="button">
-            <span class="sr-only">Toggle navigation</span>
-          </a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expended="false">
+              <i class="fa fa-list-ul"></i>
+            </a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <aside class="main-sidebar">
-    <section class="sidebar" style="height: auto;">
+  <aside class="main-sidebar" style="height: auto;">
+    <section class="sidebar">
       <!-- Sidebar user panel -->
       <div class="user-panel">
-        <div class="pull-left image">
-          <img src="img/user9-160x160.jpg" class="img-circle" alt="User Image">
-        </div>
-        <div class="pull-left info">
-          <p>Jae-Yi Lin</p>
-        </div>
+          <img class="profile-user-img img-responsive img-circle" src="img/user9-160x160.jpg" alt="User profile picture">
+          <h3 class="text-center">Jae-Yi Lin</h3>
+          <div class="text-center">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
       </div>
+
       <ul class="sidebar-menu">
         <li class="header">Profile</li>
-        <!--<div class="control">
-            <div class="Email-label">Email</div>
-            <input type="text" class="input-form-control" value="admin@gmail.com" readonly="">
-        </div>
-        <div class="control">
-            <div class="Email-label">Phone</div>
-            <input type="text" class="input-form-control" value="121314124" readonly="">
-        </div>-->
-        <li ><a href="#"><i class="fa fa-circle-o"></i> 個人檔案</a></li>
-        <li ><a href="#"><i class="fa fa-circle-o"></i> 行事曆</a></li>
-        <li ><a href="#"><i class="fa fa-circle-o"></i> 編輯個人資料</a></li>
-        <!--<li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
-          </a>
-        </li>-->
+        <li ><a href="profile.html"><i class="fa fa-circle-o"></i> 個人檔案</a></li>
+        <li ><a href="profile-calendar.html"><i class="fa fa-circle-o"></i> 行事曆</a></li>
+        <li ><a href="profile-edit.html"><i class="fa fa-circle-o"></i> 編輯個人資料</a></li>
+      </ul>
     </section>
   </aside>
  
@@ -210,75 +187,74 @@
                 </li>
                 <!--滑動視窗-->
                 <div id="follow1-1" class="panel-collapse collapse">
-              <section>
-                <ul class="slide">
-                    <li>
-                      <div class="col-lg-2"></div>
-                      <div class="col-lg-10">
-                        <div class="row">
-                          <div class="col-lg-1"><img class="img-circle img-small" src="img/user9-160x160.jpg"></div>
-                          <div class="col-lg-9 padding-l">
-                            <h4>Venkman
-                              <div><time>2015/12/16</time></div>
-                            </h4>
+                  <section>
+                    <ul class="slide">
+                        <li>
+                          <div class="col-lg-2"></div>
+                          <div class="col-lg-10">
+                            <div class="row">
+                              <div class="col-lg-1"><img class="img-circle img-small" src="img/user9-160x160.jpg"></div>
+                              <div class="col-lg-9 padding-l">
+                                <h4>Venkman
+                                  <div><time>2015/12/16</time></div>
+                                </h4>
+                              </div>
+                              <div class="col-lg-2">
+                                <i class="like">
+                                  <div class="button icon-left button-clear ion-heart like"><span class="comment-heart">5</span></div>
+                                </i>
+                              </div>
+                            </div>
                           </div>
-                          <div class="col-lg-2">
-                            <i class="like">
-                              <div class="button icon-left button-clear ion-heart like"><span class="comment-heart">5</span></div>
-                            </i>
+                          <div class="row">
+                              <div class="col-lg-3"></div>
+                              <p class="col-lg-9 comments">Back off, man. I'm a scientist.</p>
                           </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-lg-3"></div>
-                          <p class="col-lg-9 comments">Back off, man. I'm a scientist.</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="col-lg-2"></div>
-                      <div class="col-lg-10">
-                        <div class="row">
-                          <div class="col-lg-1"><img class="img-circle img-small" src="img/user9-160x160.jpg"></div>
-                          <div class="col-lg-9 padding-l">
-                            <h4>Venkman
-                              <div><time>2015/12/16</time></div>
-                            </h4>
+                        </li>
+                        <li>
+                          <div class="col-lg-2"></div>
+                          <div class="col-lg-10">
+                            <div class="row">
+                              <div class="col-lg-1"><img class="img-circle img-small" src="img/user9-160x160.jpg"></div>
+                              <div class="col-lg-9 padding-l">
+                                <h4>Venkman
+                                  <div><time>2015/12/16</time></div>
+                                </h4>
+                              </div>
+                              <div class="col-lg-2">
+                                <i class="like">
+                                  <div class="button icon-left button-clear ion-heart like"><span class="comment-heart">5</span></div>
+                                </i>
+                              </div>
+                            </div>
                           </div>
-                          <div class="col-lg-2">
-                            <i class="like">
-                              <div class="button icon-left button-clear ion-heart like"><span class="comment-heart">5</span></div>
-                            </i>
+                          <div class="row">
+                              <div class="col-lg-3"></div>
+                              <p class="col-lg-9 comments">Back off, man. I'm a scientist.</p>
                           </div>
-                        </div>
-                      </div>
-                      <div class="row">
-                          <div class="col-lg-3"></div>
-                          <p class="col-lg-9 comments">Back off, man. I'm a scientist.</p>
-                      </div>
-                      <div class="divider"></div>
-
-                    </li>
-                </ul>
-                <!-- slide -->   
-              </section>
-            </div>
-            <div id="more1-1" class="panel-collapse collapse">
-              <ul class="list-group">
-                <li class="list-group-item active"><span class="fa fa-list-ul"></span> 服務項目</li>
-                <li class="list-group-item">把家具搬上貨車</li>
-                <li class="list-group-item">稍微清掃房子</li>
-                <li class="list-group-item">將家具搬下貨車</li>
-                <li class="list-group-item">排好大型家具</li>
-              </ul>
-            </div>
-            <div id="leave1-1" class="panel-collapse collapse">
-              <div class="form-group">
-                <input type="text" class="form-control" id="RestaurantText" placeholder="輸入活動名稱以離開">
-                    </div>                    
-                <div>
-                  <button type="button" id="send" class="btn btn-primary">確認</button>   
+                          <div class="divider"></div>
+                        </li>
+                    </ul>
+                    <!-- slide -->   
+                  </section>
                 </div>
-            </div>
+                <div id="more1-1" class="panel-collapse collapse">
+                  <ul class="list-group">
+                    <li class="list-group-item active"><span class="fa fa-list-ul"></span> 服務項目</li>
+                    <li class="list-group-item">把家具搬上貨車</li>
+                    <li class="list-group-item">稍微清掃房子</li>
+                    <li class="list-group-item">將家具搬下貨車</li>
+                    <li class="list-group-item">排好大型家具</li>
+                  </ul>
+                </div>
+                <div id="leave1-1" class="panel-collapse collapse">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="RestaurantText" placeholder="輸入活動名稱以離開">
+                        </div>                    
+                    <div>
+                      <button type="button" id="send" class="btn btn-primary">確認</button>   
+                    </div>
+                </div>
             <!--滑動視窗 end-->
             <!--<li>
                   <time datetime="2014-07-31 1600">
@@ -356,7 +332,7 @@
                       <li class="list-group-item">將家具搬下貨車</li>
                       <li class="list-group-item">排好大型家具</li>
                     </ul>
-                  </div>
+                </div>
               </ul>
               </div>
                 <div class="chart tab-pane" id="finished">
@@ -517,9 +493,9 @@
        immediately after the control sidebar -->
   <!--<div class="control-sidebar-bg"></div>-->
 </div>
-<script src="js/jQuery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="js/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);

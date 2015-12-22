@@ -619,12 +619,6 @@ div.notice > blockquote > div.row {
 }
 
 
-.img-circle {
-	margin-right: 5px;
-}
-
-
-
 .wizard .nav-tabs {
     position: relative;
     border-bottom-color: #3c8dbc;
@@ -751,4 +745,10 @@ blockquote > div > div {
 .detail {
 	margin: 10px;
 	margin-top: 75px;
+}
+#user-name{
+	color:#fff;
+}
+#bell{
+	color:#fff;
 }

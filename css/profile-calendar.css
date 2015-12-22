@@ -61,3 +61,6 @@ div.container-badge h4 {
     background-color: rgb(50, 118, 177);
     border-color: rgb(40, 94, 142);
 }
+.user-panel > img.img-circle {
+	margin-right: -px;
+}

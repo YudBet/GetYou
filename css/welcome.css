@@ -67,11 +67,11 @@ body {
 .inner > h3.masthead-brand {
   padding-right: 200px;
 }
-.inner > nav > ul > button,
+.inner > nav > ul > a > button,
 .inner > button {
   border-radius: 5px;
 }
-.inner > nav > ul > button > span {
+.inner > nav > ul > a > button > span {
   margin-right: 10px;
   margin-left: 10px;
 }
