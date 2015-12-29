@@ -136,6 +136,22 @@ active:hover,
 .comments article:hover .active:hover {
   opacity: .44;
 }
+.logo {
+  background-color: #3c8dbc !important;
+}
+/*-----widget-----*/
+.small-box {
+  border-radius: 5px;
+  padding: 10px;
+}
+.small-box > .inner {
+  font-family: 微軟正黑體;
+  font-size: 20px;
+}
+.small-box > div.icon {
+  margin: 15px;
+  top: -13px !important;
+}
 
 /* Break */
 @media (max-width: 775px) {
