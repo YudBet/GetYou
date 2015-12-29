@@ -9,6 +9,11 @@ p {
 	font-family: 微軟正黑體;
 }
 
+.btn-block {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
 .login-option > div {
 	text-align: center;
 }
