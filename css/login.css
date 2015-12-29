@@ -1,0 +1,24 @@
+.login-box {
+	border-radius: 50px !important;
+}
+
+.btn-block,
+.login-option > div > a,
+p {
+	border-radius: 3px !important;
+	font-family: 微軟正黑體;
+}
+
+.login-option > div {
+	text-align: center;
+}
+
+.register {
+	border: none; 
+}
+
+::-webkit-input-placeholder {
+ font-size: 14px;
+ color: #f00;
+ font-family: 微軟正黑體;
+}
