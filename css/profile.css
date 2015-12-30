@@ -42,7 +42,7 @@ time {
 .comments {
   /*max-width: 500px;*/
   min-width: 300px;
-  margin:20px auto;
+  margin:50px auto;
 }
 .comments article {
   position: relative;
@@ -152,6 +152,12 @@ active:hover,
   margin: 15px;
   top: -13px !important;
 }
+/*-----font-----*/
+h1 {
+  font-family:微軟正黑體;
+}
+/*-----content-----*/
+
 
 /* Break */
 @media (max-width: 775px) {
