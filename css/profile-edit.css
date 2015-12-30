@@ -47,3 +47,6 @@ button,
 .logo {
   background-color: #3c8dbc !important;
 }
+.form-control {
+	border-radius: 4px;
+}
