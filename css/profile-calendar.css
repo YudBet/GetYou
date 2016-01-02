@@ -31,31 +31,20 @@ img.img-small {
 .padding-l {
 	margin-left: 15px;
 }
-.comments {
-	margin-left: 20px;
-	margin-top: 0px;
-}
-ul.slide > li {
+div.slide > li {
 	border-bottom: inset;
 	border: 1px solid lightgrey;
 	border-radius: 5px;
 	margin-bottom: 10px;
+	padding: 10px;
 
 }
 ul.event > li{
 	margin-bottom: 0;
 }
 div.container-badge {
-   height: 6em;
-   position: relative 
-}              /* 1 */
-div.container-badge h4 {
-   margin: 0;
-   position: absolute;               /* 2 */
-   top: 50%;                         /* 3 */
-   transform: translate(0, -50%)
-   font-family:微軟正黑體; 
-}   /* 4 */
+	margin-top: 20px;
+} 
 .input-group-addon.primary {
     color: rgb(255, 255, 255);
     background-color: rgb(50, 118, 177);
