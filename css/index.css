@@ -14,8 +14,11 @@ body {
 }
 
 .logo {
-	margin-left: calc(50vw - 315px - 8.5px);
     background-color: #3c8dbc !important;
+}
+
+.logo-center {
+	margin-left: calc(50vw - 315px - 8.5px);
 }
 
 #header-usrname {
@@ -628,7 +631,7 @@ span.round-tab:hover {
 }
 
 
-button, textarea, p, a, strong, div {
+h2, button, textarea, p, a, strong, div {
 	font-family: "微軟正黑體";
 }
 
