@@ -48,6 +48,7 @@ div#post-page, div#more-page {
 }
 
 div#more-page {
+	padding-top: 25px;
     position: relative;
 }
 
@@ -634,6 +635,7 @@ button, textarea, p, a, strong, div {
 
 div#more-page > .notice {
 	margin: 25px;
+	margin-top: 0px;
 	margin-bottom: 0;
 }
 
