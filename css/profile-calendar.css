@@ -53,41 +53,12 @@ div.container-badge {
 .user-panel > img.img-circle {
 	margin-right: -px;
 }
-
-
-
-
-/****** Style Star Rating Widget *****/
-
-.rating { 
-  border: none;
-  float: left;
-}
-
-.rating > input { display: none; } 
-.rating > label:before { 
-  margin: 5px;
-  margin-top: 0;
-  font-size: 1em;
-  font-family: FontAwesome;
-  display: inline-block;
-  content: "\f005";
-}
-
-.rating > .half:before { 
-  content: "\f089";
-  position: absolute;
-}
-
-.rating > label { 
-  color: #ddd; 
- float: right; 
+.form-control.leave {
+	padding-top: 5px;
 }
 
 
 fieldset, label { margin: 0; padding: 0; }
-body{ margin: 20px; }
-h1 { font-size: 1.5em; margin: 10px; }
 
 /****** Style Star Rating Widget *****/
 
@@ -96,7 +67,7 @@ h1 { font-size: 1.5em; margin: 10px; }
   float: left;
 }
 
-.rating > input { display: none; } 
+.rating > input { display: none;} 
 .rating > label:before { 
   margin: 3px;
   font-size: 1.25em;
@@ -111,11 +82,10 @@ h1 { font-size: 1.5em; margin: 10px; }
 }*/
 
 .rating > label { 
- color: #ddd; 
- float: right; 
- position: static;
- font-size: 13px;
- /*margin:0px;*/
+  color: #ddd; 
+  float: right; 
+  position: static;
+  font-size: 13px;
 }
 
 /***** CSS Magic to Highlight Stars on Hover *****/
