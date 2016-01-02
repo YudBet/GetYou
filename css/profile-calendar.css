@@ -56,7 +56,10 @@ div.container-badge {
 .form-control.leave {
 	padding-top: 5px;
 }
-
+div > time {
+	color: lightgrey;
+	font-size: 14px;
+}
 
 fieldset, label { margin: 0; padding: 0; }
 
